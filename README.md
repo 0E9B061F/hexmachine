@@ -15,7 +15,7 @@ Available under the terms of the [MIT License][license].
 
 [gh]:https://github.com/0E9B061F
 [repo]:https://github.com/0E9B061F/hexmachine
-[npm]:https://www.npmjs.com/package/@0e9b061f/hexmachine
+[npm]:https://www.npmjs.com/package/hexmachine
 [commits]:https://github.com/0E9B061F/hexmachine/commits/master
 [license]:https://github.com/0E9B061F/hexmachine/blob/master/LICENSE
 
