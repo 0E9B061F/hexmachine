@@ -1,6 +1,9 @@
 {
   "name": "hexmachine",
-  "version": "3.0.0",
+  "version": "4.0.0",
+  "mkv": {
+    "before": ":game_die:"
+  },
   "description": "A versatile static site generator",
   "license": "MIT",
   "homepage": "https://github.com/0E9B061F/hexmachine#readme",
@@ -34,7 +37,8 @@
     "hexmachine": "bin/hexmachine.mjs"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "mkv": "mkv"
   },
   "keywords": [
     "static",
@@ -81,6 +85,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
+    "@0e9b061f/mkv": "^0.2.0",
     "cross-env": "^7.0.3",
     "fs-extra": "^11.1.1",
     "jasmine": "^4.5.0",
