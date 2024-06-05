@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+import { existsSync } from "node:fs"
+import { readFile } from "node:fs/promises"
 import { join, resolve } from "node:path"
 import { parseArgs } from "node:util"
 import webpack from "webpack"
@@ -7,11 +9,16 @@ import Site from "../lib/site.mjs"
 import config from "../lib/webpack.config.mjs"
 
 let {
-  values: { source },
+  values: { pkg, source },
   positionals,
 } = parseArgs({
   allowPositionals: true,
   options: {
+    pkg: {
+      type: "string",
+      short: "p",
+      default: "./package.json",
+    },
     source: {
       type: "string",
       short: "s",
@@ -20,10 +27,17 @@ let {
   },
 })
 
+pkg = resolve(pkg)
 source = resolve(source)
 const entry = join(source, "build.mjs")
 let output = positionals[0] || join(source, "HEXBUILD")
 output = resolve(output)
+
+let siteInfo = {}
+if (existsSync(pkg)) {
+  const data = await readFile(pkg, {encoding: "utf-8"})
+  siteInfo = JSON.parse(data)
+}
 
 console.log("> Building ...")
 console.log(`  source: ${source}`)
