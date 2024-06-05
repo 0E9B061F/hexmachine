@@ -1,6 +1,6 @@
 {
   "name": "hexmachine",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "mkv": {
     "before": ":game_die:"
   },

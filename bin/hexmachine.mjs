@@ -25,16 +25,24 @@ const entry = join(source, "build.mjs")
 let output = positionals[0] || join(source, "HEXBUILD")
 output = resolve(output)
 
+console.log("> Building ...")
+console.log(`  source: ${source}`)
+console.log(`  output: ${output}`)
 const site = await Site.make({
   path: resolve(source),
   outPath: resolve(output),
 })
 await site.compile()
 
+console.log("> Bundling ...")
+console.log(`  entry:  ${entry}`)
+
 const compiler = webpack(config(entry, output))
 compiler.run((err, stats)=> {
-  console.log("webpack compiler run", err)
+  console.log(stats.toString({
+    chunks: false,
+    colors: true,
+  }))
   compiler.close((closeErr)=> {
-    console.log("webpack compiler closed", closeErr)
   })
 })
