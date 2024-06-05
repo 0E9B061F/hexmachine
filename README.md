@@ -20,6 +20,6 @@ Available under the terms of the [MIT License][license].
 [license]:https://github.com/0E9B061F/hexmachine/blob/master/LICENSE
 
 [icon-ver]:https://img.shields.io/github/package-json/v/0E9B061F/hexmachine.svg?style=flat-square&logo=github&color=%236e7fd2
-[icon-npm]:https://img.shields.io/npm/v/@0e9b061f/hexmachine.svg?style=flat-square&color=%23de2657
+[icon-npm]:https://img.shields.io/npm/v/hexmachine.svg?style=flat-square&color=%23de2657
 [icon-lic]:https://img.shields.io/github/license/0E9B061F/hexmachine.svg?style=flat-square&color=%236e7fd2
 [icon-mnt]:https://img.shields.io/maintenance/yes/2024.svg?style=flat-square
