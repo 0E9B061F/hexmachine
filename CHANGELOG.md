@@ -1,3 +1,7 @@
+# v4.3.0
+* [master d820162] add mirror mode, which adds a `noindex` link to all built
+  pages. this is useful for mirrors.
+
 # v4.2.0
 * [master 5dccd67] improve modification time handling for better sitemaps. nodes
   with the rebirth module will now look for `node.conf.edited` for their
