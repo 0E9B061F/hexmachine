@@ -1,3 +1,6 @@
+# NEXT
+* [master 9f14184] sort posts under tag indices by date, like other indices
+
 # v4.3.0
 * [master d820162] add mirror mode, which adds a `noindex` link to all built
   pages. this is useful for mirrors.
