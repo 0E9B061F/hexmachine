@@ -1,4 +1,4 @@
-# :game_die: **hexmachine** v4.3.0
+# :game_die: **hexmachine** v4.4.0
 [![Version][icon-ver]][repo]
 [![License][icon-lic]][license]
 [![Maintenance][icon-mnt]][commits]<br/>
@@ -6,6 +6,26 @@
 
 **hexmachine** is a flexible static site generator.
 
+# Site Structure
+
+A typical **hexmachine** site might look like this:
+
+```
+blog/                # A blog with multiple (hex)markdown posts.
+  conf.json          # The blog's configuration file
+  post-number-one.md 
+  post-number-two.md
+styles/              # Stylesheets (Sass or CSS)
+  entry.scss         # Main style. May be CSS or Sass. Import other styles here
+  other.scss         # This would have to be imported via `entry.scss`
+images/              # Any images to be used on the site, other than favicons
+favicons/            # Favicons to be linked with `<link rel="icon" ...>`
+favicon.ico          # Basic `.ico` favicon
+conf.json            # The main site configuration file
+tags.json            # Configure your tags here
+index.json           # Configure the site-wide index here
+build.mjs            # JS entry point. Will be bundled and included in the site
+```
 
 # License
 

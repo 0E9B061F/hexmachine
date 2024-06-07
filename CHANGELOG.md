@@ -1,4 +1,7 @@
-# NEXT
+# v4.4.0
+* [master a43b582] made content node configurable in the main `conf.json`. these
+  are `Blog` and `Gallery` nodes. added internal node addressing system to
+  facilitate this, under `site.go`
 * [master 9f14184] sort posts under tag indices by date, like other indices
 
 # v4.3.0
