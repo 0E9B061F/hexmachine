@@ -1,6 +1,10 @@
+# v4.5.2
+* Fixes for GitHub packaging workflow
+
 # v4.5.1
 * Minor fixes
 * Add GitHub workflow to publish package
+
 # v4.5.0
 * Added `Document`s node. This is very similar to the `Blog`
   node but non-chronological, so `Post`s under a `Document` node will no have
