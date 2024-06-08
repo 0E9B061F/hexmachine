@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>{{#if post}}{{post.titlePlain}} - {{/if}}{{#if page}}{{page.titlePlain}} - {{/if}}{{site.titlePlain}}</title>
+
+  <meta name="author" content="qibly" />
+  <meta name="description" content="{{#if post}}{{#if post.desc}}{{post.desc}} {{/if}}{{/if}}{{#if page}}{{#if page.desc}}{{page.desc}} {{/if}}{{/if}}{{site.desc}}" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/site/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/site/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/site/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/site/favicons/favicon-192x192.png">
+
+  <link href="/site/hex.css" rel="stylesheet" type="text/css" />
+  <script defer="defer" src="/site/hex.js"></script>
+
+  {{#if site.mirror}}
+    <meta name="robots" content="noindex">
+  {{else}}
+    <meta name="robots" content="all">
+  {{/if}}
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,4 +1,7 @@
 # v4.5.4
+* Fix spec dir
+
+# v4.5.4
 * Improved tests
 
 # v4.5.3
