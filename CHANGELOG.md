@@ -1,3 +1,9 @@
+# NEXT
+* [master 2236e03] add REPL script for easier debugging. call it with a site
+  source directory (`bin/repl.mjs ~/site-source`) and it will create a new
+  `Site` instance from that source without compiling it, available in the global
+  context as `site`
+
 # v4.4.0
 * [master a43b582] made content node configurable in the main `conf.json`. these
   are `Blog` and `Gallery` nodes. added internal node addressing system to
