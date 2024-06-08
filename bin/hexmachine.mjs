@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { existsSync } from "node:fs"
-import { readFile } from "node:fs/promises"
 import { join, resolve } from "node:path"
 import { parseArgs } from "node:util"
 import webpack from "webpack"

@@ -1,4 +1,7 @@
-# NEXT
+# v4.5.0
+* [master 18bd9cd] added `Document`s node. this is very similar to the `Blog`
+  node but non-chronological, so `Post`s under a `Document` node will no have
+  "previous" or "next" posts, and will not be displayed with those links
 * [master 2236e03] add REPL script for easier debugging. call it with a site
   source directory (`bin/repl.mjs ~/site-source`) and it will create a new
   `Site` instance from that source without compiling it, available in the global
@@ -12,7 +15,7 @@
 
 # v4.3.0
 * [master d820162] add mirror mode, which adds a `noindex` link to all built
-  pages. this is useful for mirrors.
+  pages.
 
 # v4.2.0
 * [master 5dccd67] improve modification time handling for better sitemaps. nodes
