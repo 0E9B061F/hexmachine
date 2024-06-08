@@ -1,3 +1,6 @@
+# v4.5.4
+* Improved tests
+
 # v4.5.3
 * Change publishing workflow to use npm
 

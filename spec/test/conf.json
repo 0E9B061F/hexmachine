@@ -1,0 +1,9 @@
+{
+  "title": "test website",
+  "desc": "a website for testing",
+  "host": "https://example.com",
+  "package": "./package.json",
+  "mount": {
+    "blog": "Blog"
+  }
+}
