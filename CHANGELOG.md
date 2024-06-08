@@ -1,5 +1,8 @@
+# v4.5.3
+* Change publishing workflow to use npm
+
 # v4.5.2
-* Fixes for GitHub packaging workflow
+* Fixes for GitHub publishing workflow
 
 # v4.5.1
 * Minor fixes
