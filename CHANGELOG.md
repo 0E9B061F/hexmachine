@@ -1,4 +1,8 @@
-# v4.5.4
+# v4.5.6
+* Add workflow to publish to GitHub
+* Update TODO
+
+# v4.5.5
 * Fix spec dir
 
 # v4.5.4

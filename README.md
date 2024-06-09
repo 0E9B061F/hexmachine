@@ -1,4 +1,4 @@
-# :game_die: **hexmachine** v4.5.5
+# :game_die: **hexmachine** v4.5.6
 [![Version][icon-ver]][repo]
 [![License][icon-lic]][license]
 [![Maintenance][icon-mnt]][commits]<br/>
