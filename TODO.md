@@ -1,7 +1,8 @@
 * figure out templates. figure out inserting links to bundled JS/CSS (this has to be done manually in the site source currently)
 * place js and css links into HTML automatically
 * place favicon links in HTML automatically
-* add image caching to build
+* improve build time
+  * improve image caching
 * add modes to site `conf.json`, like:
   ```json
   {
@@ -21,3 +22,4 @@
   this makes it possible to easily produce multiple builds of a given site with
   different configurations. any config given inside a mode will override the
   main config for the same values when compiling in that mode
+* add showcase (to highlight current project)

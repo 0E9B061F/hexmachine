@@ -7,7 +7,7 @@ import Site from "../lib/site.mjs"
 import config from "../lib/webpack.config.mjs"
 
 let {
-  values: { source, mirror },
+  values: { source, mirror, imageCache },
   positionals,
 } = parseArgs({
   allowPositionals: true,
@@ -16,6 +16,11 @@ let {
       type: "string",
       short: "s",
       default: ".",
+    },
+    imageCache: {
+      type: "string",
+      short: "i",
+      default: "",
     },
     mirror: {
       type: "boolean",
@@ -29,6 +34,8 @@ source = resolve(source)
 const entry = join(source, "build.mjs")
 let output = positionals[0] || join(source, "HEXBUILD")
 output = resolve(output)
+imageCache ||= false
+if (imageCache) imageCache = resolve(imageCache)
 
 console.log("> Building ...")
 console.log(`  source: ${source}`)
@@ -36,7 +43,7 @@ console.log(`  output: ${output}`)
 const site = await Site.make({
   path: resolve(source),
   outPath: resolve(output),
-  mirror,
+  mirror, imageCache,
 })
 await site.compile()
 
